@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monthly Report - Bloglite</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+			font-family: 'Segoe UI', sans-serif;
+		}
+		
+		.container {
+			max-width: 500px;
+			margin: 20px auto;
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+			text-align: center;
+		}
+		
+		h2 {
+			color: #4CAF50;
+			font-size: 32px;
+			margin-top: 0;
+		}
+		
+		p {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+		}
+		
+		th, td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		
+		th {
+			background-color: #4CAF50;
+			color: #fff;
+		}
+		
+		button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Monthly Report - Bloglite</h2>
+		<p>Hi there,{{user_name}}</p>
+		<p>Here's your monthly report for Bloglite! We hope you've been enjoying the app and finding it useful.</p>
+		<table>
+			<tr>
+				<th>Metrics</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>Number of posts</td>
+				<td>{{posts}}</td>
+			</tr>
+			<!-- <tr>
+				<td>Number of likes</td>
+				<td>150</td>
+			</tr> -->
+			<!-- <tr>
+				<td>Number of comments</td>
+				<td>50</td>
+			</tr> -->
+			<tr>
+				<td>Number of Followers</td>
+				<td>{{Followers}}</td>
+			</tr>
+            <tr>
+				<td>Number of Following</td>
+				<td>{{Following}}</td>
+			</tr>
+		</table>
+		<p>If you have any feedback or suggestions on how we can improve Bloglite, please let us know. We're always looking for ways to make the app even better!</p>
+		<button>Open App Now</button>
+		<p>Best regards,</p>
+		<p>The Bloglite Team</p>
+	</div>
+</body>
+</html>
